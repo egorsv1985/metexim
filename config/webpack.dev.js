@@ -6,7 +6,7 @@ import CopyPlugin from "copy-webpack-plugin";
 import * as path from 'path';
 
 const srcFolder = "src";
-const builFolder = "dist";
+const buildFolder = "dist";
 const rootFolder = path.basename(path.resolve());
 
 let pugPages = fs.readdirSync(srcFolder).filter(fileName => fileName.endsWith('.pug'))
@@ -42,7 +42,7 @@ if (!pugPages.length) {
 
 const paths = {
 	src: path.resolve(srcFolder),
-	build: path.resolve(builFolder)
+	build: path.resolve(buildFolder)
 }
 const config = {
 	mode: "development",
