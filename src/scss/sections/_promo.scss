@@ -1,157 +1,50 @@
 .promo {
-  .container {
-    position: relative;
+  padding-top: 140px;
+  .carousel {
+   
+    &-item{
+      @include background (url("@img/main.png"));
+      padding: 90px 0 125px;
+    }
   }
-  &__bg{
-    background-repeat: no-repeat;
-    background-position: 50% 135px;
-    background-size: auto;
-    background-image: url("@img/waves.png");
-  }
-// .promo-services__content
-&__content {
-  padding-top: 255px;
 }
-  // .promo__btn
-  &__btn {
-    position: relative;
-    &--visitor {
-      text-align: left;
-      padding-left: 130px;
-    }
-  }
-  // .promo__span
-  &__span {
-    display: block;
-    &--visitor {
-      @include background(url("@img/icons/gift.svg"));
-      position: absolute;
-      left: 75px;
-      top: 50%;
-      @include wh(24px);
-      &::before {
-        @include pseudo;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        border: 1px solid #05c3de;
-        @include wh(55px);
-        z-index: 1;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-      }
-    }
-  }
-  // .promo__scroll
-  &__scroll {
-    position: absolute;
-    left: 15px;
-    bottom: 95px;
-    padding-left: 40px;
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-    background-size: auto 100%;
-    background-image: url("@img/icons/mouse.svg");
-    &::before {
-      @include pseudo;
-      height: 1px;
-      width: 156px;
-      background-color: $thirdColor;
-      position: absolute;
-      bottom: 50%;
-      left: -190%;
-    }
-  }
-  // .promo__title
-  &__title {
-    max-width: 550px;
-   
-   
+.container {
+}
 
-    --promo-title-font-size: clamp(40px, 5.9vw + 18.77px, 64px);
-    font-size: var(--promo-title-font-size);
-    // font-size: 64px;
-    line-height: 110%;
-    padding-left: 0;
- 
-    &::before {
-      display: none;
-    }
-  }
-  // .promo__subtitle
-  
-  &__subtitle {
-    margin-bottom: 64px;
-    }
+.slide {
+}
+.carousel-indicators {
+}
+.active {
+}
+.carousel-inner {
+}
 
-  .box-border {
-    @include wh(40px);
-    background: linear-gradient(
-        61.29deg,
-        #05c3de 11.43%,
-        rgba(5, 195, 222, 0) 91.01%
-      ),
-      linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.05),
-        rgba(255, 255, 255, 0.05)
-      );
-      cursor: pointer;
-      &:hover{
-        transition: all .3s ease-in-out;
-        
-        .box-circle{
-          background: $successColor;
-        }
-      }
-    &--gift {
-      @include wh(55px);
-      @include media(max, sm) {
-        display: none;
-      }
-    }
-  }
-  .box-circle {
-    background: $thirdColor;
-    @include wh(38px);
-    &--gift {
-      @include wh(53px);
-    }
-  }
-   // .promo__box-img
-   &__box-img {
-    padding-top: 195px;
-    
-    }
-
-  // .promo__ellipse1
-  &__ellipse1 {
-    @include wh(226px);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10%;
-    right: 0;
-
-    background-color: #cd7efc;
-    filter: blur(150px);
-  }
-  // .promo__ellipse2
-  &__ellipse2 {
-    @include wh(177px);
-    border-radius: 50%;
-    position: absolute;
-    top: 26%;
-    left: 0;
-
-    background-color: #05c3de;
-    filter: blur(150px);
-  }
-  &__box{
-    top: -80px;
-    z-index: -1;
-    @include media (max, lg){
-      top: 0;
-      
-    }
-    }
+.h1 {
+}
+.fs-50 {
+}
+.fw-900 {
+}
+.fs-20 {
+}
+.fw-600 {
+}
+.btn {
+}
+.fs-16 {
+}
+.px-2 {
+}
+.py-3 {
+}
+.btn-primary {
+}
+.carousel-control-prev {
+}
+.carousel-control-prev-icon {
+}
+.carousel-control-next {
+}
+.carousel-control-next-icon {
 }

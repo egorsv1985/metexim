@@ -172,13 +172,14 @@ picture {
 @import "./blocks/social";
 @import "./blocks/open-burger";
 @import "./blocks/menu";
+
 // sections
-// @import "./sections/promo";
+@import "./sections/promo";
 // @import "./sections/contacts";
 
 // main-pages
 
-// @import "./sections/promo-main";
+@import "./sections/promo";
 // @import "./sections/about";
 // @import "./sections/halls";
 // @import "./sections/services";
