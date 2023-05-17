@@ -1,11 +1,6 @@
 .footer {
   padding: 40px 0;
-  // .footer__logo
-  &__logo {
-   
-  }
-  // .footer__text
-  &__text {}
+
   // .footer__social-list
   &__social-list {
     max-width: 60px;
@@ -14,71 +9,42 @@
   &__social-item {
     @include wh(25px);
 
-
-background-color: $thirdColor;
-
+    background-color: $thirdColor;
   }
-  // .footer__social-link
-  &__social-link {}
-  // .footer__subtitle
-  &__subtitle {}
+
   // .footer__box
   &__box {
     padding-left: 36px;
     position: relative;
-    @include media (max, sm) {
-      padding-left:0;
+    @include media(max, sm) {
+      padding-left: 0;
     }
-    &::before{
+    &::before {
       @include pseudo;
       @include wh(15px);
       position: absolute;
       left: 0;
       top: 30%;
       transform: translateY(-50%);
-      @include media (max, sm) {
+      @include media(max, sm) {
         display: none;
       }
     }
     &--map {
       &::before {
-       
         @include background(url("@img/icons/map.svg"));
-        
-       
-       
+      }
+    }
+
+    &--time {
+      &::before {
+        @include background(url("@img/icons/time.svg"));
+      }
+    }
+    &--tel {
+      &::before {
+        @include background(url("@img/icons/tel.svg"));
+      }
     }
   }
-  
-  &--time{
-    &::before {
-     
-      @include background(url("@img/icons/time.svg"));
-     
-      }
-  }
-  &--tel{
-    &::before {
-     
-      @include background(url("@img/icons/tel.svg"));
-    
-   
-      }
-  }
-  }
-  // .footer__box--map
-  &__box--map {}
-  // .footer__span
-  &__span {}
-  // .footer__box--time
-  &__box--time {}
-  // .footer__box--tel
-  &__box--tel {}
-  // .footer__link
-  &__link {}
-  // .footer__list
-  &__list {}
-  // .footer__item
-  &__item {}
 }
-

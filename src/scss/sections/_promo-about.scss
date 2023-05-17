@@ -1,0 +1,23 @@
+.promo-about {
+	// .promo-about__content
+	&__content {}
+	// .promo-about__title
+	&__title {}
+	// .promo-about__subtitle
+	&__subtitle {
+		max-width: 530px;
+	}
+	// .promo-about__btn
+	&__btn {}
+	// .promo-about__box-img
+	&__box-img {}
+	// .promo-about__img
+	&__img {}
+	// .promo-about__ellipse1
+	&__ellipse1 {}
+	// .promo-about__ellipse2
+	&__ellipse2 {}
+	// .promo-about__box
+	&__box {}
+}
+

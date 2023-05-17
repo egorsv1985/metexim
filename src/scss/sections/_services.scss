@@ -1,0 +1,163 @@
+.services {
+  padding: 115px 0 125px;
+  position: relative;
+  @include background(url("@img/services.png"));
+  // .services__title
+  &__title {
+  }
+  // .services__subtitle
+  &__subtitle {
+    // max-width: 330px;
+    margin-bottom: 70px;
+  }
+  // .services__box
+  &__box {
+    //  width: 100%;
+    // max-width: 445px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid $mainColor;
+
+    border-radius: 10px;
+    padding: 50px 15px;
+    position: relative;
+    &::before {
+      @include pseudo;
+      backdrop-filter: blur(12.5px);
+      @include wh(100%);
+      border-radius: 10px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  // .services__description
+  &__description {
+    text-align: center;
+  }
+  // .services__text
+  &__text {
+    text-align: center;
+
+    @include media(max, 360px) {
+      font-size: 14px;
+    }
+    &--pseudo {
+      position: relative;
+      &::before {
+        @include pseudo;
+        @include wh(10px);
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: -20px;
+        transform: translateX(-50%);
+
+        background-color: $mainColor;
+      }
+    }
+  }
+
+  // .services__btn
+  &__btn {
+  }
+  .box-border {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    @include wh(40px);
+    background: linear-gradient(
+        61.29deg,
+        #05c3de 11.43%,
+        rgba(5, 195, 222, 0) 91.01%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+      cursor: pointer;
+      &:hover{
+        transition: all .3s ease-in-out;
+        
+        .box-circle{
+          background: $successColor;
+        }
+      }
+  }
+  .box-circle {
+    background: $accentColor;
+    @include wh(38px);
+  }
+  // .services__arrow
+  &__arrow {
+    @include background(url("@img/icons/arrow.svg"));
+    width: 11px;
+    height: 8px;
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out;
+  }
+  .services__span {
+    --services-span-margin-right: clamp(10px, 9.67vw + -64.29px, 75px);
+    margin-right: var(--services-span-margin-right);
+    @include media(max, lg) {
+      // margin-right: 0;
+    }
+    // margin-right: 75px;
+  }
+  button[aria-expanded="true"] {
+    .services__arrow {
+      transform: rotate(270deg);
+    }
+  }
+  .card {
+    background-color: transparent;
+    border-bottom: 1px solid $thirdColor;
+
+    // .card__btn
+    &__btn {
+      --card-btn-font-size: clamp(14px, 2.35vw + 6.47px, 20px);
+      font-size: var(--card-btn-font-size);
+      // font-size: 20px;
+      @include media(max, 360px) {
+        text-align: left !important;
+      }
+    }
+  }
+  .card-body {
+    ul {
+      padding-left: 100px;
+      max-width: 290px;
+      @include media(max, lg) {
+        padding-left: 0;
+      }
+      li {
+        position: relative;
+        line-height: 130%;
+        &::before {
+          @include pseudo;
+          @include wh(5px);
+          border-radius: 50%;
+          position: absolute;
+          left: -15px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: $secondColor;
+        }
+      }
+    }
+  }
+
+  // .services__ellipse
+  &__ellipse {
+    @include wh(177px);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+
+    background-color: #05c3de;
+    filter: blur(150px);
+    z-index: -2;
+  }
+}

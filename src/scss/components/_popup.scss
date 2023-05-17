@@ -1,10 +1,8 @@
 .popup {
-  // .popup__wrapper
-  &__wrapper {
-  }
+  
   // .popup__content
   &__content {
-    background-color: $accentColor;
+    // background-color: $accentColor;
     border-radius: 40px;
   }
   // .popup__close
@@ -15,17 +13,13 @@
       @include wh(30px);
     }
   }
-  // .popup__form
-  &__form {
-  }
+
   .form {
     // .form__body
     &__body {
       flex-direction: column;
     }
-    // .form__box
-    &__box {
-    }
+
     // .form__input
     &__input {
       border-color: #fff;
@@ -45,9 +39,7 @@
         color: #fff;
       }
     }
-    // .form__label
-    &__label {
-    }
+   
     // .form__btn
     &__btn {
       width: 100%;

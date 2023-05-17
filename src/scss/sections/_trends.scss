@@ -1,0 +1,51 @@
+.trends {
+  padding: 115px 0;
+  // .trends__title
+  &__title {
+  }
+  // .trends__subtitle
+  &__subtitle {
+    max-width: 530px;
+  }
+  // .trends__content
+  &__content {
+    border-top: 1px solid #edf0f5;
+  }
+  // .trends__item
+  &__item {
+	position: relative;
+	&::before, &::after{
+		@include pseudo;
+		width: 1px;
+		position: absolute;
+		top: 15px;
+		bottom:15px;
+		
+		background-color: #EDF0F5;
+	}
+	&::before{
+		left: 0;
+	}
+	&::after{
+		right: -1px;
+	}
+  }
+  // .trends__description
+  &__description {
+  }
+  // .trends__box-text
+  &__box-text {
+  }
+  // .trends__text
+  &__text {
+  }
+  // .trends__box-img
+  &__box-img {
+	img, picture{
+		width: 100%;
+	}
+  }
+  // .trends__img
+  &__img {
+  }
+}

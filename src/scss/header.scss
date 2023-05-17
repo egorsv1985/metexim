@@ -1,196 +1,298 @@
+// .header {
+//   position: fixed;
+//   z-index: 999;
+//   width: 100%;
+//   // background-color: $accentColor;
+
+//   // .header__box
+//   &__box {
+
+//     &::before{
+//       @include pseudo;
+//       @include wh(15px);
+//       position: absolute;
+//         left: -25px;
+//         top: 0;
+//     }
+//     &--map {
+//       &::before {
+
+//         @include background(url("@img/icons/map.svg"));
+
+//       }
+//     }
+//     &--metro {
+//       &::before {
+
+//         @include background(url("@img/icons/metro.svg"));
+//         @include wh(16px, 12px);
+
+//       }
+//     }
+//     &--time {
+//       &::before {
+
+//         @include background(url("@img/icons/time.svg"));
+
+//       }
+//     }
+//     &--tel {
+//       &::before {
+
+//         @include background(url("@img/icons/tel.svg"));
+
+//       }
+//     }
+//   }
+
+//   // .header__menu
+//   &__menu {
+//     position: fixed;
+//     left: -100%;
+
+//     top: 0;
+//     bottom: 0;
+//     z-index: -1;
+//     transition: all 0.2s ease;
+
+//     @include media(min, lg) {
+//       position: relative;
+//       left: 0;
+//       z-index: 10;
+//     }
+//     ul ul {
+//       position: absolute;
+//       top: 100%;
+//       opacity: 0;
+//       transform: scale(0%);
+//       transform-origin: 50% 0%;
+//       transition: all 0.5s ease;
+//       left: 0;
+//       width: 100%;
+//       display: flex;
+//       flex-wrap: wrap;
+
+//     }
+//     ul li:hover ul {
+//       top: 100%;
+//       opacity: 1;
+//       transform: scale(100%);
+//       transition: all 0.05s ease;
+//     }
+//   }
+
+//   // .header__list
+//   &__list {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//     position: relative;
+//   }
+
+//   // .header__link
+//   &__link {
+//     position: relative;
+//     &:hover {
+//       &::before {
+//         background-color: $mainColor;
+//         width: 100%;
+//       }
+//     }
+//     &::before {
+//       @include pseudo;
+//       height: 1px;
+//       width: 0;
+//       background-color: $mainColor;
+//       position: absolute;
+//       bottom: -6px;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       transition: all 0.5s ease-in-out;
+//     }
+//     &--after {
+//       &::after {
+//         @include pseudo;
+//         @include background(url("@img/icons/arrow-menu.svg"));
+//         @include wh(8px, 5px);
+//         position: absolute;
+//         right: 0;
+//         top: 50%;
+//       }
+//     }
+//   }
+
+//   // .header__btn
+//   &__btn {
+//     position: relative;
+//     &--enter {
+//       text-align: left;
+//       background: url("@img/icons/enter.svg") right 20px center / 15px 15px no-repeat, $mainColor;
+
+//         @include media(max, lg) {
+//          background-image: none;
+//         }
+
+//     }
+//     &--mail {
+//       text-align: right;
+//       &::before {
+//         @include pseudo;
+//         background-color: $mainColor;
+//         @include wh(15px);
+//         position: absolute;
+//         left: 30px;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         border-radius: 50%;
+//         @include media(max, lg) {
+//           left: 15px;
+//         }
+//       }
+//     }
+//   }
+
+//   // .header__social-item
+//   &__social-item {
+//     @include wh(25px);
+//     border-radius: 50%;
+
+//     // background-color: $thirdColor;
+//   }
+
+// }
 .header {
   position: fixed;
   z-index: 999;
   width: 100%;
-  background-color: $accentColor;
-  // .header__wrapper
-  &__wrapper {
-  }
+
   // .header__logo
   &__logo {
   }
-  // .header__box
-  &__box {
-   
-    &::before{
+  // .header__span
+  &__span {
+    &::before {
       @include pseudo;
       @include wh(15px);
       position: absolute;
-        left: -25px;
-        top: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%;
     }
-    &--map {
+    &--black {
       &::before {
-        
-        @include background(url("@img/icons/map.svg"));
-       
-        
-        
-      }
-    }
-    &--metro {
-      &::before {
-    
-        @include background(url("@img/icons/metro.svg"));
-        @include wh(16px, 12px);
-      
-      }
-    }
-    &--time {
-      &::before {
-      
-        @include background(url("@img/icons/time.svg"));
-        
-     
-      }
-    }
-    &--tel {
-      &::before {
-        
-        @include background(url("@img/icons/tel.svg"));
-
+       background-color: #3d3d3d;
        
       }
     }
-  }
-
-  // .header__span
-  &__span {
-  }
-
-
-  // .header__menu
-  &__menu {
-    position: fixed;
-    left: -100%;
-
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 0.2s ease;
-
-    @include media(min, lg) {
-      position: relative;
-      left: 0;
-      z-index: 10;
-    }
-    ul ul {
-      position: absolute;
-      top: 100%;
-      opacity: 0;
-      transform: scale(0%);
-      transform-origin: 50% 0%;
-      transition: all 0.5s ease;
-      left: 0;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      
-    }
-    ul li:hover ul {
-      top: 100%;
-      opacity: 1;
-      transform: scale(100%);
-      transition: all 0.05s ease;
-    }
-  }
-
-  // .header__list
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-  }
-  // .header__item
-  &__item {
-  }
-  // .header__link
-  &__link {
-    position: relative;
-    &:hover {
+    &--color {
       &::before {
-        background-color: $mainColor;
-        width: 100%;
+        background: conic-gradient(from 180deg at 50% 50%, #FF0000 0deg, #FFE600 58.12deg, #00FF19 118.12deg, #00D1FF 174.38deg, #001AFF 230.62deg, #AD00FF 290.63deg, #FF00C7 360deg);
       }
     }
-    &::before {
-      @include pseudo;
-      height: 1px;
-      width: 0;
-      background-color: $mainColor;
-      position: absolute;
-      bottom: -6px;
-      left: 50%;
-      transform: translateX(-50%);
-      transition: all 0.5s ease-in-out;
-    }
-    &--after {
-      &::after {
-        @include pseudo;
-        @include background(url("@img/icons/arrow-menu.svg"));
-        @include wh(8px, 5px);
-        position: absolute;
-        right: 0;
-        top: 50%;
-      }
-    }
-  }
-  // .header__item--parent
-  &__item--parent {
-  }
-  // .header__list-child
-  &__list-child {
-  }
-  // .header__item-child
-  &__item-child {
-  }
-  // .header__link-child
-  &__link-child {
-  }
-  // .header__btn
-  &__btn {
-    position: relative;
-    &--enter {
-      text-align: left;
-      background: url("@img/icons/enter.svg") right 20px center / 15px 15px no-repeat, $mainColor;
-      
-        @include media(max, lg) {
-         background-image: none;
-        }
-      
-    }
-    &--mail {
-      text-align: right;
+    &--office {
       &::before {
-        @include pseudo;
-        background-color: $mainColor;
-        @include wh(15px);
-        position: absolute;
-        left: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        border-radius: 50%;
-        @include media(max, lg) {
-          left: 15px;
-        }
+        @include background(url("@img/icons/office.svg"));
       }
     }
   }
-  // .header__burger
-  &__burger {
+  // .header__span--black
+  &__span--black {
+  }
+  // .header__span--color
+  &__span--color {
+  }
+  // .header__span--office
+  &__span--office {
   }
   // .header__social-list
   &__social-list {
   }
-  // .header__social-item
-  &__social-item {
-    @include wh(25px);
-    border-radius: 50%;
+  // .header__btn
+  &__btn {
+  }
+  // .header__menu
+  &__menu {
+  }
+  // .header__burger
+  &__burger {
+  }
+}
+.container {
+}
+.row {
+}
+.py-1 {
+}
+.mb-3 {
+}
+.col-2 {
+}
+.logo {
+  // .logo__img
+  &__img {
+  }
+}
+.mw-100 {
+}
+.d-block {
+}
+.fs-14 {
+}
+.text-secondary {
+}
+.text-nowrap {
+}
+.py-3 {
+}
+.position-relative {
+}
+.ps-4 {
+}
+.fs-16 {
+}
+.fw-700 {
+}
 
-    background-color: $thirdColor;
+.py-2 {
+}
+.px-0 {
+}
+.fw-500 {
+}
+.btn {
+}
+.btn-transparent {
+}
+.btn-outline-danger {
+}
+.w-100 {
+}
+.px-4 {
+}
+
+.col-12 {
+}
+.d-flex {
+}
+.h-100 {
+}
+.flex-column {
+}
+.flex-lg-row {
+}
+.justify-content-center {
+}
+.justify-content-lg-between {
+}
+.ps-0 {
+}
+.d-inline-block {
+}
+.burger {
+  // .burger__inner
+  &__inner {
   }
-  // .header__social-link
-  &__social-link {
-  }
+}
+.button {
 }

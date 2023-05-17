@@ -1,0 +1,116 @@
+// @import "/node_modules/bootstrap/scss/bootstrap";
+// Custom.scss
+// Вариант Б. Включите части Bootstrap
+
+// // 1. Сначала включите функции (чтобы Вы могли управлять цветами, SVG, вычислением и т.д.)
+// @import "/node_modules/bootstrap/scss/functions";
+
+// // 2. Включите сюда любые переопределения переменных по умолчанию
+
+// // 3. Включите оставшуюся часть необходимых таблиц стилей Bootstrap
+// @import "/node_modules/bootstrap/scss/variables";
+// @import "/node_modules/bootstrap/scss/mixins";
+
+// // 4. Включите любые дополнительные компоненты Bootstrap, как Вам нравится
+// @import "/node_modules/bootstrap/scss/root";
+// @import "/node_modules/bootstrap/scss/reboot";
+// @import "/node_modules/bootstrap/scss/type";
+// @import "/node_modules/bootstrap/scss/images";
+// @import "/node_modules/bootstrap/scss/containers";
+// @import "/node_modules/bootstrap/scss/grid";
+
+// 5. Добавьте сюда дополнительный пользовательский код
+
+:root {
+  --bs-blue: #05c3de;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #DE0814;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #3D3D3D;
+  --bs-white: #fff;
+  --bs-gray: #90959E;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #de0814;
+  --bs-secondary: #661411;
+  --bs-success: #3d3d3d;
+  --bs-info: #90959e;
+  --bs-warning: #ffc107;
+  --bs-danger: #DE0814;
+  --bs-light: #f8f9fa;
+  --bs-dark: #3d3d3d;
+  --bs-primary-rgb: 61, 61, 61;
+  --bs-secondary-rgb: 144, 149, 158;
+  --bs-success-rgb: 61, 61, 61;
+  --bs-info-rgb: 144, 149, 158;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb:222, 8, 20;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 61, 61, 61;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 61, 61, 61;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Mulish", "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.25;
+  --bs-body-color: #3D3D3D;
+  --bs-body-bg: #fff;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #F3F5F7;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.3125rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.625rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-pill: 50rem;
+  --bs-link-color: #fff;
+  --bs-link-hover-color: #DE0814;
+  --bs-code-color: #d63384;
+  --bs-highlight-bg: #fff3cd;
+}
+.breadcrumb {
+  --bs-breadcrumb-padding-x: 0;
+  --bs-breadcrumb-padding-y: 0;
+  --bs-breadcrumb-margin-bottom: 1rem;
+  --bs-breadcrumb-bg: ;
+  --bs-breadcrumb-border-radius: ;
+  --bs-breadcrumb-divider-color: #90959E;
+  --bs-breadcrumb-item-padding-x: 0.5rem;
+  --bs-breadcrumb-item-active-color: #DE0814;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
+  margin-bottom: var(--bs-breadcrumb-margin-bottom);
+  font-size: var(--bs-breadcrumb-font-size);
+  list-style: none;
+  background-color: var(--bs-breadcrumb-bg);
+  border-radius: var(--bs-breadcrumb-border-radius);
+}

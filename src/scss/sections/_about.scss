@@ -1,0 +1,207 @@
+.about {
+  padding: 45px 0 105px;
+  // .about__title
+  &__title {
+  }
+  // .about__subtitle
+  &__subtitle {
+    margin-bottom: 34px;
+  }
+
+  // .about__box-text
+  &__box-text {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  // .about__box-img
+  &__box-img {
+    margin-top: 45px;
+    position: relative;
+  }
+
+  // .about__box-border
+  &__box-border {
+    &--big {
+      border-radius: 50%;
+    
+      background: linear-gradient(
+          61.29deg,
+          #05c3de 11.43%,
+          rgba(5, 195, 222, 0) 91.01%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.05)
+        );
+      
+      
+
+
+      position: absolute;
+      top: 59%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+
+      @include wh(502px);
+    }
+    &--center {
+      background: linear-gradient(
+          61.29deg,
+          #05c3de 11.43%,
+          rgba(5, 195, 222, 0) 91.01%
+        ),
+        linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.05)
+        );
+      padding: 1px;
+      position: absolute;
+      top: 59%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      border-radius: 50%;
+      @include wh(348px);
+    }
+    &--small {
+      @include wh(177px);
+      position: absolute;
+      top: 59%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #05c3de;
+      filter: blur(150px);
+    }
+  }
+
+  // .about__box-circle
+  &__box-circle {
+    &--big {
+      border-radius: 50%;
+      background: $accentColor;
+      @include wh(500px);
+    }
+    &--center {
+      border-radius: 50%;
+      background: $accentColor;
+      @include wh(348px);
+    }
+  }
+
+  // .about__content-border
+  &__content-border {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        61.29deg,
+        #05c3de 11.43%,
+        rgba(5, 195, 222, 0) 91.01%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+    padding: 1px;
+
+    border-radius: 10px;
+  }
+
+  // .about__content
+  &__content {
+    padding: 26px 24px 20px;
+    background: $accentColor;
+    border-radius: 10px;
+    p:nth-child(2) {
+      min-width: 300px;
+    }
+  }
+  // .about__box-content
+  &__box-content {
+    margin-bottom: 55px;
+  }
+  // .about__box-border
+  &__box-border {
+    background: linear-gradient(
+        61.29deg,
+        #05c3de 11.43%,
+        rgba(5, 195, 222, 0) 91.01%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+    padding: 1px;
+
+    border-radius: 10px;
+  }
+  .box-border {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        61.29deg,
+        #05c3de 11.43%,
+        rgba(5, 195, 222, 0) 91.01%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05)
+      );
+  }
+  .box-circle {
+    background: $thirdColor;
+  }
+  // .about__box
+  &__box {
+    position: relative;
+    background: $accentColor;
+    padding: 45px 20px 10px;
+    min-height: 120px;
+    border-radius: 10px;
+  }
+
+  // .about__box-gift
+  &__box-gift {
+    @include flex(center, center);
+    @include wh(55px);
+    background: $accentColor;
+  }
+
+  // .about__blockquote
+  &__blockquote {
+    font-family: "Montserrat-Italic";
+    font-style: italic;
+
+    color: $textMainColor;
+    margin-top: 120px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $thirdColor;
+    position: relative;
+    @include media(max, lg) {
+      margin-top: 60px;
+    }
+    &::before {
+      @include pseudo;
+      @include background(url("@img/icons/quotation.svg"));
+      position: absolute;
+      top: -25px;
+      left: 0;
+      @include wh(22px, 19px);
+    }
+  }
+}
