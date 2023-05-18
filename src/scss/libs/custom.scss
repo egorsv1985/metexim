@@ -26,15 +26,15 @@
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
-  --bs-red: #DE0814;
+  --bs-red: #de0814;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
-  --bs-black: #3D3D3D;
+  --bs-black: #3d3d3d;
   --bs-white: #fff;
-  --bs-gray: #90959E;
+  --bs-gray: #90959e;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
@@ -50,15 +50,15 @@
   --bs-success: #3d3d3d;
   --bs-info: #90959e;
   --bs-warning: #ffc107;
-  --bs-danger: #DE0814;
+  --bs-danger: #de0814;
   --bs-light: #f8f9fa;
   --bs-dark: #3d3d3d;
   --bs-primary-rgb: 61, 61, 61;
-  --bs-secondary-rgb: 144, 149, 158;
+  --bs-secondary-rgb: 243, 245, 247;
   --bs-success-rgb: 61, 61, 61;
   --bs-info-rgb: 144, 149, 158;
   --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb:222, 8, 20;
+  --bs-danger-rgb: 222, 8, 20;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 61, 61, 61;
   --bs-white-rgb: 255, 255, 255;
@@ -79,11 +79,11 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.25;
-  --bs-body-color: #3D3D3D;
+  --bs-body-color: #3d3d3d;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #F3F5F7;
+  --bs-border-color: #f3f5f7;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   --bs-border-radius: 0.3125rem;
   --bs-border-radius-sm: 0.25rem;
@@ -91,8 +91,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #fff;
-  --bs-link-hover-color: #DE0814;
+  --bs-link-color: #90959e;
+  --bs-link-hover-color: #de0814;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -102,9 +102,9 @@
   --bs-breadcrumb-margin-bottom: 1rem;
   --bs-breadcrumb-bg: ;
   --bs-breadcrumb-border-radius: ;
-  --bs-breadcrumb-divider-color: #90959E;
+  --bs-breadcrumb-divider-color: #90959e;
   --bs-breadcrumb-item-padding-x: 0.5rem;
-  --bs-breadcrumb-item-active-color: #DE0814;
+  --bs-breadcrumb-item-active-color: #de0814;
   display: flex;
   flex-wrap: wrap;
   padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
@@ -113,4 +113,77 @@
   list-style: none;
   background-color: var(--bs-breadcrumb-bg);
   border-radius: var(--bs-breadcrumb-border-radius);
+}
+.btn-secondary {
+  --bs-btn-color: #de0814;
+  --bs-btn-bg: #f3f5f7;
+  --bs-btn-border-color: #f3f5f7;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5c636a;
+  --bs-btn-hover-border-color: #565e64;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #565e64;
+  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-width: 1px;
+  --bs-nav-tabs-border-color: #f3f5f7;
+  --bs-nav-tabs-border-radius: 50%;
+  --bs-nav-tabs-link-hover-border-color: #f3f5f7 #f3f5f7 #f3f5f7;
+  --bs-nav-tabs-link-active-color: #de0814;
+  --bs-nav-tabs-link-active-bg: transparent;
+  --bs-nav-tabs-link-active-border-color: #de0814 #de0814 #de0814;
+  border-bottom: var(--bs-nav-tabs-border-width) solid
+    var(--bs-nav-tabs-border-color);
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+  background: none;
+  border: var(--bs-nav-tabs-border-width) solid #90959e;
+  border-radius: var(--bs-nav-tabs-border-radius);
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: #de0814;
+}
+.form-select {
+		
+  background-image: url("@img/icons/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 8px 5px;
+  border-radius: 0.625rem;
+  
+}
+.form-control {
+  
+  border-radius: 0.625rem;
+  
+}
+
+.form-check-input {
+    width: 1.25em;
+    height: 1.25em;
+    margin-top: 0;
+   
+  
+    border: 1px solid #D9D9D9;
+   
+}
+
+.form-check-input:checked[type=radio] {
+  background-image: url("@img/icons/checked.svg");
+  background-size: 8px 8px;
+}
+.form-check-input:checked {
+  background-color: #fff;
+  border-color: #DE0814;
 }

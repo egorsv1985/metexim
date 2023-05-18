@@ -38,132 +38,22 @@
         
     
       <div class="col-12 col-lg-6">
-        <div class="accordion " id="accordionExample">
-          <div class="card mb-2 me-4 me-lg-0">
-            <div class="card-header ps-0" id="headingOne">
-              <h2 class="mb-0">
-                <button
-                  class="card__btn btn btn-link btn-block text-lg-start d-flex d-lg-inline-block text-center text-decoration-none fw-700 fs-20 py-3 ps-0 text-white"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  <span class="text-primary services__span">01</span>
-                  Основные направления
-                  <span class="services__box-border box-border d-block">
-                    <span
-                      class="services__box-circle box-circle d-flex justify-content-center align-items-center"
-                    >
-                      <span class="services__arrow"></span>
-                    </span>
-                  </span>
-                </button>
-              </h2>
-            </div>
-
-            <div
-              id="collapseOne"
-              class="collapse"
-              aria-labelledby="headingOne"
-              data-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <ul>
-                  <li class="fs-16 list-unstyled">Танцевальные классы</li>
-                  <li class="fs-16">Йога / Медитация</li>
-                  <li class="fs-16">STRETCHING</li>
-                  <li class="fs-16">Боевые искусства</li>
-                  <li class="fs-16">Жиросжигающие программы</li>
-                  <li class="fs-16">Здоровая спина</li>
-                </ul>
-              </div>
-            </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Главная</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Профиль</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Контакт</button>
+          </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">hgfhgfh</div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">ghghfdfds.</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">gfdgfgd.</div>
           </div>
-          <div class="card mb-2 me-4 me-lg-0">
-            <div class="card-header ps-0" id="headingTwo">
-              <h2 class="mb-0">
-                <button
-                  class="card__btn btn btn-link btn-block text-lg-start d-flex d-lg-inline-block text-center text-decoration-none fw-700 fs-20 py-3 ps-0 text-white collapsed"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  <span class="text-primary services__span">02</span>
-                  Групповые направления
-                  <span class="services__box-border box-border d-block">
-                    <span
-                      class="services__box-circle box-circle d-flex justify-content-center align-items-center"
-                    >
-                      <span class="services__arrow"></span>
-                    </span>
-                  </span>
-                </button>
-              </h2>
-            </div>
-            <div
-              id="collapseTwo"
-              class="collapse show"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <ul>
-                  <li>Танцевальные классы</li>
-                  <li>Йога / Медитация</li>
-                  <li>STRETCHING</li>
-                  <li>Боевые искусства</li>
-                  <li>Жиросжигающие программы</li>
-                  <li>Здоровая спина</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-2 me-4 me-lg-0">
-            <div class="card-header ps-0" id="headingThree">
-              <h2 class="mb-0">
-                <button
-                  class="card__btn btn btn-link btn-block text-lg-start d-flex d-lg-inline-block text-center text-decoration-none fw-700 fs-20 py-3 ps-0 text-white collapsed"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  <span class="text-primary services__span">03</span>
-                  Дополнительные возможности
-                  <span class="services__box-border box-border d-block">
-                    <span
-                      class="services__box-circle box-circle d-flex justify-content-center align-items-center"
-                    >
-                      <span class="services__arrow"></span>
-                    </span>
-                  </span>
-                </button>
-              </h2>
-            </div>
-            <div
-              id="collapseThree"
-              class="collapse"
-              aria-labelledby="headingThree"
-              data-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <ul>
-                  <li>Танцевальные классы</li>
-                  <li>Йога / Медитация</li>
-                  <li>STRETCHING</li>
-                  <li>Боевые искусства</li>
-                  <li>Жиросжигающие программы</li>
-                  <li>Здоровая спина</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
      
     </div>
