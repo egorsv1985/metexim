@@ -410,7 +410,7 @@ picture {
 
 .fs-24 {
   font-size: 1.5rem;
-  line-height: 125%;
+  line-height: 113%;
 }
 
 .fs-32 {
@@ -425,7 +425,7 @@ picture {
 
 .fs-36 {
   font-size: 2.25rem;
-  line-height: 125%;
+  line-height: 113%;
 }
 
 .fs-50 {
@@ -696,6 +696,43 @@ body {
   appearance: none;
 }
 
+.advantages__box-svg {
+  width: 60px;
+  height: 60px;
+}
+.advantages .nav-item {
+  max-width: 210px;
+}
+.advantages .nav-tabs .nav-link:hover, .advantages .nav-tabs .nav-link:focus {
+  border-color: #D9D9D9;
+}
+.advantages .nav-tabs .nav-link.active, .advantages .nav-tabs .nav-item.show .nav-link {
+  border-color: #DE0814;
+}
+
+.banner__bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/banner.png");
+}
+.banner__box-svg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.banner__box-svg:before {
+  content: "";
+  display: block;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0.2;
+  border-radius: 50%;
+}
 .header {
   position: fixed;
   z-index: 999;
