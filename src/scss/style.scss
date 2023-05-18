@@ -175,7 +175,7 @@ picture {
 
 // sections
 @import "./sections/promo";
-// @import "./sections/contacts";
+
 
 // main-pages
 
@@ -183,46 +183,15 @@ picture {
 @import "./sections/valuation";
 @import "./sections/advantages";
 @import "./sections/banner";
-// @import "./sections/about";
-// @import "./sections/halls";
-// @import "./sections/services";
-// @import "./sections/cafe";
-// @import "./sections/infrastructure";
-// @import "./sections/social-project";
-// @import "./sections/forms";
 
-// services-page
-// @import "./sections/promo-services";
-// @import "./sections/programs";
-// @import "./sections/trends";
 
-// cards-page
-// @import "./sections/promo-cards";
-// @import "./sections/cards";
 
-// shedule-page
-// @import "./sections/promo-shedule";
-// @import "./sections/shedule";
-
-// contacts-page
-// @import "./sections/promo-contacts";
-// @import "./sections/map";
-
-// team-page
-// @import "./sections/promo-team";
-// @import "./sections/team";
-
-// about-page
-// @import "./sections/promo-about";
-// @import "./sections/advantages";
-// @import "./sections/team-about";
-// @import "./sections/vacansies";
 
 // @import "./components/popup";
 
 // block
 @import "header";
-// @import "footer";
+@import "footer";
 // @import "./blocks/nav";
 // @import "./blocks/logo";
 @import "./blocks/open-burger";
