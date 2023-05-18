@@ -1,0 +1,213 @@
+.banner {
+	&__bg{
+		@include background (url("@img/banner.png"));
+	}
+	
+	// .banner__title
+	&__title {}
+	// .banner__subtitle
+	&__subtitle {}
+	// .banner__link
+	&__link {}
+	// .banner__box-svg
+	&__box-svg {
+		@include wh(60px);
+		position: relative;
+		&:before {
+			@include pseudo;
+			background-color: #fff;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			opacity: 0.2;
+			border-radius: 50%;
+			
+		}
+	}
+	// .banner__svg
+	&__svg {
+		
+	}
+}
+.bg-danger {
+}
+.container {
+}
+.row {
+}
+.col-8 {
+}
+.fs-36 {
+}
+.fw-900 {
+}
+.text-white {
+}
+.fs-20 {
+}
+.fw-600 {
+}
+.col-12 {
+}
+.col-lg-4 {
+}
+.btn {
+}
+.px-3 {
+}
+.py-3 {
+}
+.btn-danger {
+}
+.col-4 {
+}
+.d-flex {
+}
+.banner-svg {
+}
+.rounded-circle {
+}
+.bg-white {
+}
+.justify-content-center {
+}
+.align-items-center {
+}
+.flex-column {
+}
+.fs-14 {
+}
+.fs-24 {
+}
+.fw-700 {
+}
+.banner {
+	// .banner__bg
+	&__bg {}
+	// .banner__title
+	&__title {}
+	// .banner__subtitle
+	&__subtitle {}
+	// .banner__link
+	&__link {}
+	// .banner__boxsvg
+	&__boxsvg {}
+	// .banner__svg
+	&__svg {}
+}
+.py-5 {
+}
+.container {
+}
+.row {
+}
+.col-8 {
+}
+.fs-36 {
+}
+.fw-900 {
+}
+.text-white {
+}
+.fs-20 {
+}
+.fw-600 {
+}
+.col-12 {
+}
+.col-lg-4 {
+}
+.btn {
+}
+.px-3 {
+}
+.py-3 {
+}
+.btn-danger {
+}
+.col-4 {
+}
+.d-flex {
+}
+.rounded-circle {
+}
+.bg-white {
+}
+.justify-content-center {
+}
+.align-items-center {
+}
+.flex-column {
+}
+.fs-14 {
+}
+.fs-24 {
+}
+.fw-700 {
+}
+.banner {
+	// .banner__bg
+	&__bg {}
+	// .banner__title
+	&__title {}
+	// .banner__subtitle
+	&__subtitle {}
+	// .banner__link
+	&__link {}
+	// .banner__box-svg
+	&__box-svg {}
+	// .banner__svg
+	&__svg {}
+}
+.py-5 {
+}
+.container {
+}
+.row {
+}
+.col-8 {
+}
+.fs-36 {
+}
+.fw-900 {
+}
+.text-white {
+}
+.fs-20 {
+}
+.fw-600 {
+}
+.col-12 {
+}
+.col-lg-4 {
+}
+.btn {
+}
+.px-3 {
+}
+.py-3 {
+}
+.btn-danger {
+}
+.col-4 {
+}
+.d-flex {
+}
+.rounded-circle {
+}
+.bg-white {
+}
+.justify-content-center {
+}
+.align-items-center {
+}
+.flex-column {
+}
+.fs-14 {
+}
+.fs-24 {
+}
+.fw-700 {
+}

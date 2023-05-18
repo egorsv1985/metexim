@@ -11,7 +11,7 @@
     >
       <li class="nav-item position-relative" role="presentation">
         <button
-          class="nav-link active p-4 fs-20 fw-600 rounded-3"
+          class="nav-link active p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
           id="assessment-tab"
           data-bs-toggle="tab"
           data-bs-target="#assessment "
@@ -20,12 +20,23 @@
           aria-controls="assessment "
           aria-selected="true"
         >
+          <span
+            class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="@img/icons/assessment.svg"
+              alt="assessment"
+              class="advantages__svg"
+              width="40"
+              height="25"
+            />
+          </span>
           Оценка металлолома
         </button>
       </li>
       <li class="nav-item position-relative" role="presentation">
         <button
-          class="nav-link p-4 fs-20 fw-600 rounded-3"
+          class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
           id="buy-tab"
           data-bs-toggle="tab"
           data-bs-target="#buy"
@@ -34,12 +45,23 @@
           aria-controls="buy"
           aria-selected="false"
         >
+          <span
+            class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="@img/icons/buy.svg"
+              alt="buy"
+              class="advantages__svg"
+              width="30"
+              height="28"
+            />
+          </span>
           Покупка металлолома
         </button>
       </li>
       <li class="nav-item position-relative" role="presentation">
         <button
-          class="nav-link p-4 fs-20 fw-600 rounded-3"
+          class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
           id="license-tab"
           data-bs-toggle="tab"
           data-bs-target="#license"
@@ -48,12 +70,24 @@
           aria-controls="license"
           aria-selected="false"
         >
+          <span
+            class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="@img/icons/license.svg"
+              alt="license"
+              class="advantages__svg"
+              width="22"
+              height="27"
+            />
+          </span>
+
           Лицензия на лом металлов
         </button>
       </li>
       <li class="nav-item position-relative" role="presentation">
         <button
-          class="nav-link p-4 fs-20 fw-600 rounded-3"
+          class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
           id="contract-tab"
           data-bs-toggle="tab"
           data-bs-target="#contract"
@@ -62,12 +96,23 @@
           aria-controls="contract"
           aria-selected="false"
         >
+          <span
+            class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="@img/icons/contract.svg"
+              alt="contract"
+              class="advantages__svg"
+              width="22"
+              height="27"
+            />
+          </span>
           Договор на лом металлов
         </button>
       </li>
       <li class="nav-item position-relative" role="presentation">
         <button
-          class="nav-link p-4 fs-20 fw-600 rounded-3"
+          class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
           id="reception-tab"
           data-bs-toggle="tab"
           data-bs-target="#reception"
@@ -76,6 +121,18 @@
           aria-controls="reception"
           aria-selected="false"
         >
+          <span
+            class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="@img/icons/reception.svg"
+              alt="reception"
+              class="advantages__svg"
+              width="40"
+              height="25"
+            />
+          </span>
+
           Прием засоров лома
         </button>
       </li>
@@ -89,111 +146,102 @@
             role="tabpanel"
             aria-labelledby="assessment-tab"
           >
-            <div class="row ">
-              <div class="col-8">
-                <h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
-                <p class="fs-16 fw-500 mb-4">
-                  В связи с серьезным истощением мировых запасов железной руды,
-                  покупка металлолома в СПб становится особенно актуальной
-                  услугой. К сожалению, сегодняшнее сталелитейное производство
-                  не может удовлетворить столь активно растущий спрос на
-                  металлопродукцию. Необходимо существенно увеличить его
-                  масштабы. И при этом очень важно сделать акценты на сбережении
-                  природных запасов и экономии средств на их добыче.
-                </p>
-                <div class="advantages__box-img mb-4">
-                  <img
-                    src="@img/advantages.png"
-                    alt="Покупка металлолома в СПб"
-                    width="730"
-                    class="advantages__img w-100"
-                  />
-                </div>
-                <p class="fs-16 fw-500 mb-4">
-                  Потому покупка черного и цветного металла, и его последующая
-                  переработка, являются действенным и дешевым методом получения
-                  вторсырья. Как показывает практика, вся та продукция, что
-                  производится из утилизированного лома, нисколько не уступает
-                  по своему качеству изделиям и конструкциям, произведенным
-                  обычным традиционным способом из руды.
-                </p>
-              </div>
+            <h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
+            <p class="fs-16 fw-500 mb-4">
+              В связи с серьезным истощением мировых запасов железной руды,
+              покупка металлолома в СПб становится особенно актуальной услугой.
+              К сожалению, сегодняшнее сталелитейное производство не может
+              удовлетворить столь активно растущий спрос на металлопродукцию.
+              Необходимо существенно увеличить его масштабы. И при этом очень
+              важно сделать акценты на сбережении природных запасов и экономии
+              средств на их добыче.
+            </p>
+            <div class="advantages__box-img mb-4">
+              <img
+                src="@img/advantages.png"
+                alt="Покупка металлолома в СПб"
+                width="730"
+                class="advantages__img w-100"
+              />
             </div>
+            <p class="fs-16 fw-500 mb-4">
+              Потому покупка черного и цветного металла, и его последующая
+              переработка, являются действенным и дешевым методом получения
+              вторсырья. Как показывает практика, вся та продукция, что
+              производится из утилизированного лома, нисколько не уступает по
+              своему качеству изделиям и конструкциям, произведенным обычным
+              традиционным способом из руды.
+            </p>
           </div>
+
           <div
             class="tab-pane fade"
             id="buy"
             role="tabpanel"
             aria-labelledby="buy-tab"
           >
-            <div class="row">
-              <div class="col-8">
-                <h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
-                <p class="fs-16 fw-500 mb-4">
-                  В связи с серьезным истощением мировых запасов железной руды,
-                  покупка металлолома в СПб становится особенно актуальной
-                  услугой. К сожалению, сегодняшнее сталелитейное производство
-                  не может удовлетворить столь активно растущий спрос на
-                  металлопродукцию. Необходимо существенно увеличить его
-                  масштабы. И при этом очень важно сделать акценты на сбережении
-                  природных запасов и экономии средств на их добыче.
-                </p>
-                <div class="advantages__box-img mb-4">
-                  <img
-                    src="@img/advantages.png"
-                    alt="Покупка металлолома в СПб"
-                    width="730"
-                    class="advantages__img w-100"
-                  />
-                </div>
-                <p class="fs-16 fw-500 mb-4">
-                  Потому покупка черного и цветного металла, и его последующая
-                  переработка, являются действенным и дешевым методом получения
-                  вторсырья. Как показывает практика, вся та продукция, что
-                  производится из утилизированного лома, нисколько не уступает
-                  по своему качеству изделиям и конструкциям, произведенным
-                  обычным традиционным способом из руды.
-                </p>
-              </div>
+            <h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
+            <p class="fs-16 fw-500 mb-4">
+              В связи с серьезным истощением мировых запасов железной руды,
+              покупка металлолома в СПб становится особенно актуальной услугой.
+              К сожалению, сегодняшнее сталелитейное производство не может
+              удовлетворить столь активно растущий спрос на металлопродукцию.
+              Необходимо существенно увеличить его масштабы. И при этом очень
+              важно сделать акценты на сбережении природных запасов и экономии
+              средств на их добыче.
+            </p>
+            <div class="advantages__box-img mb-4">
+              <img
+                src="@img/advantages.png"
+                alt="Покупка металлолома в СПб"
+                width="730"
+                class="advantages__img w-100"
+              />
             </div>
+            <p class="fs-16 fw-500 mb-4">
+              Потому покупка черного и цветного металла, и его последующая
+              переработка, являются действенным и дешевым методом получения
+              вторсырья. Как показывает практика, вся та продукция, что
+              производится из утилизированного лома, нисколько не уступает по
+              своему качеству изделиям и конструкциям, произведенным обычным
+              традиционным способом из руды.
+            </p>
           </div>
+
           <div
             class="tab-pane fade"
             id="license"
             role="tabpanel"
             aria-labelledby="license-tab"
           >
-            <div class="row">
-              <div class="col-8">
-                <h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
-                <p class="fs-16 fw-500 mb-4">
-                  В связи с серьезным истощением мировых запасов железной руды,
-                  покупка металлолома в СПб становится особенно актуальной
-                  услугой. К сожалению, сегодняшнее сталелитейное производство
-                  не может удовлетворить столь активно растущий спрос на
-                  металлопродукцию. Необходимо существенно увеличить его
-                  масштабы. И при этом очень важно сделать акценты на сбережении
-                  природных запасов и экономии средств на их добыче.
-                </p>
-                <div class="advantages__box-img mb-4">
-                  <img
-                    src="@img/advantages.png"
-                    alt="Покупка металлолома в СПб"
-                    width="730"
-                    class="advantages__img w-100"
-                  />
-                </div>
-                <p class="fs-16 fw-500 mb-4">
-                  Потому покупка черного и цветного металла, и его последующая
-                  переработка, являются действенным и дешевым методом получения
-                  вторсырья. Как показывает практика, вся та продукция, что
-                  производится из утилизированного лома, нисколько не уступает
-                  по своему качеству изделиям и конструкциям, произведенным
-                  обычным традиционным способом из руды.
-                </p>
-              </div>
+            <h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
+            <p class="fs-16 fw-500 mb-4">
+              В связи с серьезным истощением мировых запасов железной руды,
+              покупка металлолома в СПб становится особенно актуальной услугой.
+              К сожалению, сегодняшнее сталелитейное производство не может
+              удовлетворить столь активно растущий спрос на металлопродукцию.
+              Необходимо существенно увеличить его масштабы. И при этом очень
+              важно сделать акценты на сбережении природных запасов и экономии
+              средств на их добыче.
+            </p>
+            <div class="advantages__box-img mb-4">
+              <img
+                src="@img/advantages.png"
+                alt="Покупка металлолома в СПб"
+                width="730"
+                class="advantages__img w-100"
+              />
             </div>
+            <p class="fs-16 fw-500 mb-4">
+              Потому покупка черного и цветного металла, и его последующая
+              переработка, являются действенным и дешевым методом получения
+              вторсырья. Как показывает практика, вся та продукция, что
+              производится из утилизированного лома, нисколько не уступает по
+              своему качеству изделиям и конструкциям, произведенным обычным
+              традиционным способом из руды.
+            </p>
           </div>
+
           <div
             class="tab-pane fade"
             id="contract"
@@ -237,36 +285,32 @@
             role="tabpanel"
             aria-labelledby="reception-tab"
           >
-            <div class="row">
-              <div class="col-8">
-                <h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
-                <p class="fs-16 fw-500 mb-4">
-                  В связи с серьезным истощением мировых запасов железной руды,
-                  покупка металлолома в СПб становится особенно актуальной
-                  услугой. К сожалению, сегодняшнее сталелитейное производство
-                  не может удовлетворить столь активно растущий спрос на
-                  металлопродукцию. Необходимо существенно увеличить его
-                  масштабы. И при этом очень важно сделать акценты на сбережении
-                  природных запасов и экономии средств на их добыче.
-                </p>
-                <div class="advantages__box-img mb-4">
-                  <img
-                    src="@img/advantages.png"
-                    alt="Покупка металлолома в СПб"
-                    width="730"
-                    class="advantages__img w-100"
-                  />
-                </div>
-                <p class="fs-16 fw-500 mb-4">
-                  Потому покупка черного и цветного металла, и его последующая
-                  переработка, являются действенным и дешевым методом получения
-                  вторсырья. Как показывает практика, вся та продукция, что
-                  производится из утилизированного лома, нисколько не уступает
-                  по своему качеству изделиям и конструкциям, произведенным
-                  обычным традиционным способом из руды.
-                </p>
-              </div>
+            <h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
+            <p class="fs-16 fw-500 mb-4">
+              В связи с серьезным истощением мировых запасов железной руды,
+              покупка металлолома в СПб становится особенно актуальной услугой.
+              К сожалению, сегодняшнее сталелитейное производство не может
+              удовлетворить столь активно растущий спрос на металлопродукцию.
+              Необходимо существенно увеличить его масштабы. И при этом очень
+              важно сделать акценты на сбережении природных запасов и экономии
+              средств на их добыче.
+            </p>
+            <div class="advantages__box-img mb-4">
+              <img
+                src="@img/advantages.png"
+                alt="Покупка металлолома в СПб"
+                width="730"
+                class="advantages__img w-100"
+              />
             </div>
+            <p class="fs-16 fw-500 mb-4">
+              Потому покупка черного и цветного металла, и его последующая
+              переработка, являются действенным и дешевым методом получения
+              вторсырья. Как показывает практика, вся та продукция, что
+              производится из утилизированного лома, нисколько не уступает по
+              своему качеству изделиям и конструкциям, произведенным обычным
+              традиционным способом из руды.
+            </p>
           </div>
         </div>
       </div>
@@ -275,16 +319,16 @@
           name="iblock_add"
           action=""
           method="post"
-          class="rounded-3 border px-5 py-4 bg-secondary position-sticky end-0 top-0"
+          class="rounded-3 border p-4 bg-secondary position-sticky end-0 top-0"
         >
-          <p class="fs-24 fw-800 text-center">Остались вопросы?</p>
-          <p class="fs-16 text-center">Проконсультируем вас!</p>
+          <p class="fs-24 fw-800 text-center mb-1">Остались вопросы?</p>
+          <p class="fs-16 text-center mb-4">Проконсультируем вас!</p>
           <input
             type="text"
             id="name"
             name="form[]"
             placeholder="Ваше имя"
-            class="form-control d-block w-100 mb-3 fs-14 text-info"
+            class="form-control d-block w-100 mb-3 fs-14 text-info px-4 py-3"
             required="required"
             size="30"
             value=""
@@ -297,12 +341,12 @@
             name="form[]"
             data-error="Ошибка"
             placeholder="Телефон"
-            class="form-control d-block w-100 mb-3 fs-14 text-info"
+            class="form-control d-block w-100 mb-3 fs-14 text-info px-4 py-3"
             value=""
             required="required"
           />
           <button
-            class="d-block w-100 text-nowrap btn btn-danger mt-4"
+            class="d-block w-100 text-nowrap btn btn-danger mb-4 p-3"
             name="iblock_submit"
             type="submit"
             value="Консультация"
@@ -311,7 +355,10 @@
           </button>
           <div class="fs-14 text-center">
             Нажимая на кнопку, вы соглашаетесь с
-            <a href="#" class="fs-14 fw-500 text-center text-danger" target="_blank"
+            <a
+              href="#"
+              class="fs-14 fw-500 text-center text-danger"
+              target="_blank"
               >политикой конфиденциальности</a
             >
           </div>
