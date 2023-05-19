@@ -46,17 +46,47 @@ function initSliders() {
   // при необходимости отключить
   bildSliders();
 
-  // if (document.querySelector(".spaSwiper")) {
-  //   new Swiper(".spaSwiper", {
-  //     spaceBetween: 55,
-  //     loop: true,
-  //     slidesPerView: 1,
-  //     navigation: {
-  //       nextEl: ".swiper-button-next",
-  //       prevEl: ".swiper-button-prev",
-  //     },
-  //   });
-  // }
+  if (document.querySelector(".promoSwiper")) {
+    new Swiper(".promoSwiper", {
+      // задаем количество слайдов, которые будут показываться одновременно
+      slidesPerView: 1,
+  
+     loop: true,
+      // включаем курсор в виде "руки" при наведении на слайды
+      grabCursor: true,
+      // включаем использование клавиатуры для навигации по слайдам
+      keyboard: {
+        enabled: true,
+      },
+      
+      // включаем полосу прокрутки и выбираем элемент, в котором она будет находиться
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      // включаем кнопки "вперед" и "назад" для навигации по слайдам
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // включаем пагинацию и настраиваем внешний вид номеров слайдов
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        // здесь мы используем функцию renderBullet для создания номеров слайдов вида "01/10"
+        renderBullet: function (index, className) {
+          return (
+            '<span class="' +
+            className +
+            '">' +
+            ("0" + (index + 1)).slice(-2) +
+            "/" +
+            ("0" + this.slides.length).slice(-2) +
+            "</span>"
+          );
+        },
+      },
+    });
+  }
 }
 
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)

@@ -1,11 +1,12 @@
 .promo {
   padding-top: 140px;
-  .carousel {
+
+  .swiper-slide {
    
-    &-item{
-      @include background (url("@img/main.png"));
-      padding: 90px 0 125px;
-    }
+    padding: 90px 0 125px;
+  }
+  // .promo__control
+  &__control {
   }
 }
 .container {
@@ -47,4 +48,59 @@
 .carousel-control-next {
 }
 .carousel-control-next-icon {
+}
+.promo {
+}
+.container {
+}
+.swiper {
+}
+.promoSwiper {
+}
+.swiper-button-prev {
+}
+.swiper-pagination {
+}
+.swiper-button-next {
+}
+.swiper-wrapper {
+}
+
+.row {
+}
+.rounded-3 {
+}
+.px-5 {
+}
+.col-12 {
+}
+.col-lg-7 {
+}
+.h1 {
+}
+.fs-50 {
+}
+.fw-900 {
+}
+.text-white {
+}
+.mb-4 {
+}
+.fs-20 {
+}
+.fw-600 {
+}
+.mb-5 {
+}
+.col-md-6 {
+}
+.col-lg-3 {
+}
+.btn {
+}
+.px-3 {
+}
+.py-3 {
+}
+.btn-danger {
 }
