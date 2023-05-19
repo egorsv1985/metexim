@@ -3,12 +3,15 @@
     
    &__menu{
     left: 0;
-    background: rgba(13, 13, 13, 0.9);
+   background-color: var(--bg-second-color);
    }
 &__list{
   gap: 20px;
 }
-  
+  &__bottom{
+    display: flex;
+    width: 100vw;
+  }
   }
 
   

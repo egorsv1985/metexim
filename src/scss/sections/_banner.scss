@@ -13,6 +13,7 @@
 	&__box-svg {
 		@include wh(60px);
 		position: relative;
+		
 		&:before {
 			@include pseudo;
 			background-color: #fff;
@@ -23,7 +24,7 @@
 			position: absolute;
 			opacity: 0.2;
 			border-radius: 50%;
-			
+
 		}
 	}
 	// .banner__svg

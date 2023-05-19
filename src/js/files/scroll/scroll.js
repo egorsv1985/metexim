@@ -1,3 +1,4 @@
+
 // Подключение функционала "Чертогов Фрилансера"
 import { isMobile, getHash } from "../functions.js";
 // Импорт класса наблюдателя.
@@ -117,7 +118,7 @@ export function stickyBlock() {
 				position: "relative",
 				bottom: "auto",
 				top: "0px",
-				left: "0px",
+				right: "0px",
 				width: "auto"
 			}
 			if (offsetTop + stickyConfig.bottom + stickyBlockItem.offsetHeight < window.innerHeight) {
@@ -125,13 +126,13 @@ export function stickyBlock() {
 					stickyItemValues.position = `fixed`;
 					stickyItemValues.bottom = `auto`;
 					stickyItemValues.top = `${offsetTop}px`;
-					stickyItemValues.left = `${stickyBlockItem.getBoundingClientRect().left}px`;
+					stickyItemValues.right = `${stickyBlockItem.getBoundingClientRect().right}px`;
 					stickyItemValues.width = `${stickyBlockItem.offsetWidth}px`;
 				} else if (scrollY >= endPoint) {
-					stickyItemValues.position = `absolute`;
-					stickyItemValues.bottom = `${stickyConfig.bottom}px`;
+					stickyItemValues.position = `relative`;
+					stickyItemValues.bottom = `${offsetTop}px`;
 					stickyItemValues.top = `auto`;
-					stickyItemValues.left = `0px`;
+					stickyItemValues.right = `${stickyBlockItem.getBoundingClientRect().left}px`;
 					stickyItemValues.width = `${stickyBlockItem.offsetWidth}px`;
 				}
 			}
@@ -152,4 +153,3 @@ setTimeout(() => {
 		});
 	}
 }, 0);
-

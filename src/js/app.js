@@ -1,3 +1,7 @@
+
+
+
+
 /*
 (i) Код попадает в итоговый файл,
 только когда вызвана функция,
@@ -161,7 +165,7 @@ flsScroll.pageNavigation();
 flsScroll.headerScroll();
 
 // Функционал липкого блока
-// flsScroll.stickyBlock();
+flsScroll.stickyBlock();
 
 /*
 Документация по работе в шаблоне: https://www.lightgalleryjs.com/docs/
@@ -213,136 +217,4 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
-// Инициализация swiper для каждой вкладки
-const tabContents = document.querySelectorAll(".tabpanel");
-tabContents.forEach((content) => {
-  const swiper = new Swiper(content.querySelector(".swiper"), {
-    // настройки swiper
 
-    slidesPerView: "1",
-    spaceBetween: 20,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 60,
-      },
-    },
-
-    loop: true,
-
-    grabCursor: true, // опция для изменения курсора при наведении на слайдер
-  });
-});
-
-// Обработчик событий клика на вкладку
-const tabs = document.querySelectorAll(".tab");
-tabs.forEach((tab) => {
-  tab.addEventListener("click", (e) => {
-    e.preventDefault();
-    // установка активной вкладки
-    tabs.forEach((tab) => tab.classList.remove("active"));
-    tab.classList.add("active");
-    // отображение соответствующей панели
-    const tabContentId = tab.getAttribute("href");
-    tabContents.forEach((content) => {
-      content.classList.remove("active");
-      if ("#" + content.getAttribute("id") === tabContentId) {
-        content.classList.add("active");
-      }
-    });
-  });
-});
-
-const tablist = document.querySelector("#tablist");
-const tablistItems = tablist.querySelectorAll("li");
-const tabPanels = document.querySelectorAll(".tabpanel");
-const swiper = document.querySelectorAll(".trainerSwiper");
-
-// Отключаем дефолтный режим перехода по ссылкам
-for (const tablistItem of tablistItems) {
-  const tabLink = tablistItem.querySelector("a");
-
-  tabLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    showPanel(tabLink);
-  });
-}
-
-// Переключаемся на панель
-function showPanel(tab) {
-  // Находим панель соответствующую выбранному табу
-  const selectedTab = document.querySelector(tab.getAttribute("href"));
-  // Скрываем неактивные панели и показываем выбранную панель
-  for (const tabPanel of tabPanels) {
-    if (tabPanel === selectedTab) {
-      tabPanel.classList.add("active");
-      // Инициализация Swiper для первой вкладки
-      initSwiper(selectedTab);
-    } else {
-      tabPanel.classList.remove("active");
-    }
-  }
-}
-
-// Инициализация Swiper
-function initSwiper(panel) {
-  const swiperContainer = panel.querySelector(".trainerSwiper");
-  if (!swiperContainer.classList.contains("swiper-container-initialized")) {
-    new Swiper(swiperContainer, {
-      slidesPerView: "1",
-      spaceBetween: 20,
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 60,
-        },
-      },
-
-      loop: true,
-
-      grabCursor: true, // опция для изменения курсора при наведении на слайдер
-    });
-    swiperContainer.classList.add("swiper-container-initialized");
-  }
-}
-const gallerySwipers = new Swiper(".gallerySwiper", {
-  // Опции Swiper
-  slidesPerView: "1",
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  paginationType: "fraction",
-
-  grabCursor: true,
-});
-// Активация первой вкладки при загрузке страницы
-showPanel(tablistItems[0].querySelector("a"));
-
-// Получаем все элементы с классом "gallery__tab"
-const galleryTabs = document.querySelectorAll(".gallery__tab");
-
-// Добавляем обработчик события "click" на каждый элемент "gallery__tab"
-galleryTabs.forEach((tab) => {
-  tab.addEventListener("click", (event) => {
-    event.preventDefault(); // Предотвращаем действие по умолчанию (например, переход по ссылке)
-    // Удаляем класс "active" у всех элементов "gallery__tab"
-    galleryTabs.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-    // Добавляем класс "active" только на текущий элемент "gallery__tab", на который был клик
-    tab.classList.add("active");
-  });
-});

@@ -5,13 +5,12 @@
       году, входит в группу компаний Транслом
     </h2>
     <ul
-      class="nav nav-tabs justify-content-between position-relative mb-5"
+      class="nav nav-tabs flex-column flex-lg-row justify-content-center position-relative mb-5 gap-3 flex-nowrap"
       id="myTab"
       role="tablist"
     >
-      <li class="nav-item position-relative" role="presentation">
-        <button
-          class="nav-link active p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
+      <li class="nav-item position-relative " role="presentation">
+        <button          class="nav-link active p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100"
           id="assessment-tab"
           data-bs-toggle="tab"
           data-bs-target="#assessment "
@@ -35,8 +34,7 @@
         </button>
       </li>
       <li class="nav-item position-relative" role="presentation">
-        <button
-          class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
+        <button          class="nav-link p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100"
           id="buy-tab"
           data-bs-toggle="tab"
           data-bs-target="#buy"
@@ -60,8 +58,7 @@
         </button>
       </li>
       <li class="nav-item position-relative" role="presentation">
-        <button
-          class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
+        <button          class="nav-link p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100"
           id="license-tab"
           data-bs-toggle="tab"
           data-bs-target="#license"
@@ -86,8 +83,7 @@
         </button>
       </li>
       <li class="nav-item position-relative" role="presentation">
-        <button
-          class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
+        <button          class="nav-link p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100"
           id="contract-tab"
           data-bs-toggle="tab"
           data-bs-target="#contract"
@@ -111,8 +107,7 @@
         </button>
       </li>
       <li class="nav-item position-relative" role="presentation">
-        <button
-          class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary"
+        <button          class="nav-link p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100"
           id="reception-tab"
           data-bs-toggle="tab"
           data-bs-target="#reception"
@@ -137,8 +132,8 @@
         </button>
       </li>
     </ul>
-    <div class="row position-relative">
-      <div class="col-8">
+    <div class="row " data-sticky data-sticky-header>
+      <div class="col-12 col-md-8">
         <div class="tab-content" id="myTabContent">
           <div
             class="tab-pane fade show active"
@@ -314,12 +309,13 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-12 col-md-4 " >
         <form
+          data-sticky-item
           name="iblock_add"
           action=""
           method="post"
-          class="rounded-3 border p-4 bg-secondary position-sticky end-0 top-0"
+          class="rounded-3 border p-4 bg-secondary"
         >
           <p class="fs-24 fw-800 text-center mb-1">Остались вопросы?</p>
           <p class="fs-16 text-center mb-4">Проконсультируем вас!</p>

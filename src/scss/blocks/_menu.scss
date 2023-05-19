@@ -1,4 +1,9 @@
 .menu {
+  @include media(max, lg) {
+    left: -100%;
+    transition: all .5s ease-in-out;
+  }
+
   // .menu__list
   &__list {
   }
@@ -15,6 +20,9 @@
       position: absolute;
       left: -45px;
       top: -5px;
+      @include media(max, lg) {
+        display: none;
+      }
     }
   }
   // .menu__link

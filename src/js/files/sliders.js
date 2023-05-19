@@ -17,7 +17,7 @@ EffectFade, Lazy, Manipulation
 
 // Стили Swiper
 // Базовые стили
-
+import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
 // import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
@@ -46,33 +46,56 @@ function initSliders() {
   // при необходимости отключить
   bildSliders();
 
-  if (document.querySelector(".teamSwiper")) {
-    new Swiper(".teamSwiper", {
-      // задаем количество слайдов, которые будут показываться одновременно
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      // включаем курсор в виде "руки" при наведении на слайды
-      grabCursor: true,
+  // if (document.querySelector(".spaSwiper")) {
+  //   new Swiper(".spaSwiper", {
+  //     spaceBetween: 55,
+  //     loop: true,
+  //     slidesPerView: 1,
+  //     navigation: {
+  //       nextEl: ".swiper-button-next",
+  //       prevEl: ".swiper-button-prev",
+  //     },
+  //   });
+  // }
+}
 
-      // включаем кнопки "вперед" и "назад" для навигации по слайдам
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
+// Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
+function initSlidersScroll() {
+  // Добавление классов слайдера
+  // при необходимости отключить
+  bildSliders();
+
+  let sliderScrollItems = document.querySelectorAll(".swiper_scroll");
+  if (sliderScrollItems.length > 0) {
+    for (let index = 0; index < sliderScrollItems.length; index++) {
+      const sliderScrollItem = sliderScrollItems[index];
+      const sliderScrollBar =
+        sliderScrollItem.querySelector(".swiper-scrollbar");
+      const sliderScroll = new Swiper(sliderScrollItem, {
+        observer: true,
+        observeParents: true,
+        direction: "vertical",
+        slidesPerView: "auto",
+        freeMode: {
+          enabled: true,
         },
-        1100: {
-          slidesPerView: 3,
+        scrollbar: {
+          el: sliderScrollBar,
+          draggable: true,
+          snapOnRelease: false,
         },
-      },
-    });
+        mousewheel: {
+          releaseOnEdges: true,
+        },
+      });
+      sliderScroll.scrollbar.updateSize();
+    }
   }
 }
 
 window.addEventListener("load", function (e) {
   // Запуск инициализации слайдеров
   initSliders();
+  // Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
+  //initSlidersScroll();
 });
