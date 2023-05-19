@@ -4,9 +4,9 @@
 			Метэксим - успешная и динамично развивающаяся компания, созданная в 2006
 			году, входит в группу компаний Транслом
 		</h2>
-		<ul class="nav nav-tabs justify-content-between position-relative mb-5" id="myTab" role="tablist">
-			<li class="nav-item position-relative" role="presentation">
-				<button class="nav-link active p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary" id="assessment-tab" data-bs-toggle="tab" data-bs-target="#assessment " type="button" role="tab" aria-controls="assessment " aria-selected="true">
+		<ul class="nav nav-tabs flex-column flex-lg-row justify-content-center position-relative mb-5 gap-3 flex-nowrap" id="myTab" role="tablist">
+			<li class="nav-item position-relative " role="presentation">
+				<button class="nav-link active p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100" id="assessment-tab" data-bs-toggle="tab" data-bs-target="#assessment " type="button" role="tab" aria-controls="assessment " aria-selected="true">
 					<span class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center">
 						<img src="img/icons/assessment.svg" alt="assessment" class="advantages__svg" width="40" height="25" />
 					</span>
@@ -14,7 +14,7 @@
 				</button>
 			</li>
 			<li class="nav-item position-relative" role="presentation">
-				<button class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary" id="buy-tab" data-bs-toggle="tab" data-bs-target="#buy" type="button" role="tab" aria-controls="buy" aria-selected="false">
+				<button class="nav-link p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100" id="buy-tab" data-bs-toggle="tab" data-bs-target="#buy" type="button" role="tab" aria-controls="buy" aria-selected="false">
 					<span class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center">
 						<img src="img/icons/buy.svg" alt="buy" class="advantages__svg" width="30" height="28" />
 					</span>
@@ -22,7 +22,7 @@
 				</button>
 			</li>
 			<li class="nav-item position-relative" role="presentation">
-				<button class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary" id="license-tab" data-bs-toggle="tab" data-bs-target="#license" type="button" role="tab" aria-controls="license" aria-selected="false">
+				<button class="nav-link p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100" id="license-tab" data-bs-toggle="tab" data-bs-target="#license" type="button" role="tab" aria-controls="license" aria-selected="false">
 					<span class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center">
 						<img src="img/icons/license.svg" alt="license" class="advantages__svg" width="22" height="27" />
 					</span>
@@ -31,7 +31,7 @@
 				</button>
 			</li>
 			<li class="nav-item position-relative" role="presentation">
-				<button class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary" id="contract-tab" data-bs-toggle="tab" data-bs-target="#contract" type="button" role="tab" aria-controls="contract" aria-selected="false">
+				<button class="nav-link p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100" id="contract-tab" data-bs-toggle="tab" data-bs-target="#contract" type="button" role="tab" aria-controls="contract" aria-selected="false">
 					<span class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center">
 						<img src="img/icons/contract.svg" alt="contract" class="advantages__svg" width="22" height="27" />
 					</span>
@@ -39,7 +39,7 @@
 				</button>
 			</li>
 			<li class="nav-item position-relative" role="presentation">
-				<button class="nav-link p-4 fs-20 fw-600 rounded-3 d-flex flex-column align-items-center text-primary" id="reception-tab" data-bs-toggle="tab" data-bs-target="#reception" type="button" role="tab" aria-controls="reception" aria-selected="false">
+				<button class="nav-link p-2 p-lg-4 fs-20 fw-600 rounded-3 d-flex flex-lg-column align-items-center gap-2 w-100 text-primary h-100" id="reception-tab" data-bs-toggle="tab" data-bs-target="#reception" type="button" role="tab" aria-controls="reception" aria-selected="false">
 					<span class="advantages__box-svg rounded-circle bg-secondary mb-2 d-flex justify-content-center align-items-center">
 						<img src="img/icons/reception.svg" alt="reception" class="advantages__svg" width="40" height="25" />
 					</span>
@@ -48,8 +48,8 @@
 				</button>
 			</li>
 		</ul>
-		<div class="row position-relative">
-			<div class="col-8">
+		<div class="row " data-sticky data-sticky-header>
+			<div class="col-12 col-md-8">
 				<div class="tab-content" id="myTabContent">
 					<div class="tab-pane fade show active" id="assessment" role="tabpanel" aria-labelledby="assessment-tab">
 						<h3 class="fs-30 fw-800 mb-4">Покупка металлолома в СПб</h3>
@@ -175,8 +175,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
-				<form name="iblock_add" action="" method="post" class="rounded-3 border p-4 bg-secondary position-sticky end-0 top-0">
+			<div class="col-12 col-md-4 ">
+				<form data-sticky-item name="iblock_add" action="" method="post" class="rounded-3 border p-4 bg-secondary">
 					<p class="fs-24 fw-800 text-center mb-1">Остались вопросы?</p>
 					<p class="fs-16 text-center mb-4">Проконсультируем вас!</p>
 					<input type="text" id="name" name="form[]" placeholder="Ваше имя" class="form-control d-block w-100 mb-3 fs-14 text-info px-4 py-3" required="required" size="30" value="" />
