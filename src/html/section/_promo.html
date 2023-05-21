@@ -1,10 +1,9 @@
 <section class="promo" id="promo">
   <div class="container">
     <div class="swiper promoSwiper">
-      <div class="promo__control">
+      <div class="swiper-control">
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
-
         <div class="swiper-button-next"></div>
       </div>
       <div class="swiper-wrapper">
@@ -170,9 +169,13 @@
           '<span class="' +
           className +
           '">' +
-          ("0" + (index + 1)).slice(-2) +
-          "/" +
-          ("0" + this.slides.length).slice(-2) +
+          '<span class="prev-slide">' +
+          ("" + (index + 1)).slice(-2) +
+          "</span>" +
+          '<span class="slash"></span>' +
+          '<span class="next-slide">' +
+          ("" + this.slides.length).slice(-2) +
+          "</span>" +
           "</span>"
         );
       },
