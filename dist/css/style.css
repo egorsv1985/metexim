@@ -112,7 +112,7 @@
   --bs-gray-900: #212529;
   --bs-primary: #de0814;
   --bs-secondary: #661411;
-  --bs-success: #3d3d3d;
+  --bs-success: #d9d9d9;
   --bs-info: #90959e;
   --bs-warning: #ffc107;
   --bs-danger: #de0814;
@@ -120,7 +120,7 @@
   --bs-dark: #3d3d3d;
   --bs-primary-rgb: 61, 61, 61;
   --bs-secondary-rgb: 243, 245, 247;
-  --bs-success-rgb: 61, 61, 61;
+  --bs-success-rgb: 217, 217, 217;
   --bs-info-rgb: 144, 149, 158;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 222, 8, 20;
@@ -295,6 +295,20 @@
     top: 0 !important;
     width: 100% !important;
   }
+}
+
+.table-danger {
+  --bs-table-color: #fff;
+  --bs-table-bg: #de0814;
+  --bs-table-border-color: #de0814;
+  --bs-table-striped-bg: #eccccf;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #de0814;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #e5c7ca;
+  --bs-table-hover-color: #000;
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
 }
 
 * {
@@ -884,6 +898,34 @@ body {
   top: 5px;
   left: -23px;
   border-radius: 50%;
+}
+
+.content .swiper-control {
+  gap: 160px;
+  bottom: 20px;
+}
+.content .swiper-slide {
+  height: 350px;
+}
+.content__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  top: 15px;
+  bottom: 15px;
+  right: -1px;
+  background-color: #d9d9d9;
+}
+.content__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  right: 15px;
+  left: 15px;
+  bottom: -1px;
+  background-color: #d9d9d9;
 }
 
 .header {
