@@ -1,0 +1,83 @@
+<section class="content py-5">
+  <div class="container">
+    <nav class="menu">
+      <ul
+        class="menu__list d-none d-lg-flex h-100 align-items-center justify-content-between text-nowrap ps-0 gap-3"
+      >
+        <li class="menu__item d-flex justify-content-center">
+          <a href="#description" class="menu__link d-inline-block">Описание</a>
+        </li>
+        <li class="menu__item d-flex justify-content-center">
+          <a href="#price" class="menu__link d-inline-block">Цены</a>
+        </li>
+        <li class="menu__item d-flex justify-content-center">
+          <a href="#steps" class="menu__link d-inline-block">Как мы работаем</a>
+        </li>
+        <li class="menu__item d-flex justify-content-center">
+          <a href="#advantages" class="menu__link d-inline-block"
+            >Преимущества</a
+          >
+        </li>
+        <li class="menu__item d-flex justify-content-center">
+          <a href="contacts-page.html" class="menu__link d-inline-block"
+            >Контакты</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="row" data-sticky data-sticky-header>
+      <div class="col-8"></div>
+      <div class="col-12 col-md-4">
+        <form
+          data-sticky-item
+          name="iblock_add"
+          action=""
+          method="post"
+          class="rounded-3 border p-4 bg-secondary"
+        >
+          <p class="fs-24 fw-800 text-center mb-1">Остались вопросы?</p>
+          <p class="fs-16 text-center mb-4">Проконсультируем вас!</p>
+          <input
+            type="text"
+            id="name"
+            name="form[]"
+            placeholder="Ваше имя"
+            class="form-control d-block w-100 mb-3 fs-14 text-info px-4 py-3"
+            required="required"
+            size="30"
+            value=""
+          />
+
+          <input
+            type="tel"
+            id="tel"
+            size="30"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Телефон"
+            class="form-control d-block w-100 mb-3 fs-14 text-info px-4 py-3"
+            value=""
+            required="required"
+          />
+          <button
+            class="d-block w-100 text-nowrap btn btn-danger mb-4 p-3"
+            name="iblock_submit"
+            type="submit"
+            value="Консультация"
+          >
+            Консультация
+          </button>
+          <div class="fs-14 text-center">
+            Нажимая на кнопку, вы соглашаетесь с
+            <a
+              href="#"
+              class="fs-14 fw-500 text-center text-danger"
+              target="_blank"
+              >политикой конфиденциальности</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

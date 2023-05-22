@@ -222,3 +222,15 @@
   background-color: #fff;
   border-color: #DE0814;
 }
+
+.advantages,
+.content{
+  form {
+    position: relative;
+    @include media(max, md) {
+      position: relative !important;
+      top: 0 !important;
+      width: 100% !important;
+    }
+  }
+}
