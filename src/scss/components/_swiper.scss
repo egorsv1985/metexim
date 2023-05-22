@@ -3,11 +3,16 @@
 .swiper-wrapper {
 }
 .swiper-slide {
+  
 }
 .swiper-control {
   bottom: 125px;
   gap: 90px;
   right: 55px;
+  @include media (max, md) {
+    bottom: 40px;
+   
+  }
 }
 .swiper-button-next,
 .swiper-button-prev {
