@@ -1,0 +1,17 @@
+.contacts {
+  // .contacts__list
+  &__list {
+    li {
+      position: relative;
+      &::before {
+        @include pseudo;
+        @include wh(7px);
+        background-color: var(--main-color);
+        position: absolute;
+        top: 5px;
+        left: -23px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

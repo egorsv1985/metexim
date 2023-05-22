@@ -24,4 +24,14 @@
       @include background(url("@img/icons/office.svg"));
     }
   }
+  &--mail {
+    &::before {
+      @include background(url("@img/icons/mail.svg"));
+    }
+  }
+  &--map {
+    &::before {
+      @include background(url("@img/icons/map.svg"));
+    }
+  }
 }

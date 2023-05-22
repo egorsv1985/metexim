@@ -1,65 +1,15 @@
 .valuation {
-	// .valuation__btn
-	&__btn {
-		position: relative;
-		&::after{
-			@include pseudo;
-			@include wh(11px, 9px);
-			position: absolute;
-			
-			top: 50%;
-			transform: translateY(-50%);
-			
-			
-		}
-		&--back{
-			&::after{
-				@include background (url("@img/icons/arrow-back.svg"));
-				left: 15px;
-
-			}
-			
-		}
-		&--next{
-			&::after{
-right: 15px;
-				@include background (url("@img/icons/arrow-next.svg"));
-			}
-		}
-		&--next-back{
-			&::after{
-				left: 15px;
-				@include background (url("@img/icons/arrow-next.svg"));
-				transform: translateY(-50%) rotate(180deg);
-			}
-			
-		}
-		
-	}
-	.nav {
-		&::before{
-			@include pseudo;
-			width: 100%;
-			left: 0;
-			position: absolute;
-			background-color: var(--text-second-color);
-			height: 1px;
-			top: 50%;
-			
-		}
-	}
-	
-	
+  
+ 
+  .nav {
+    &::before {
+      @include pseudo;
+      width: 100%;
+      left: 0;
+      position: absolute;
+      background-color: var(--text-second-color);
+      height: 1px;
+      top: 50%;
+    }
+  }
 }
-
-
-
-.valuation {
-	// .valuation__btn
-	&__btn {}
-	// .valuation__btn--back
-	&__btn--back {}
-	// .valuation__btn--next
-	&__btn--next {}
-}
-

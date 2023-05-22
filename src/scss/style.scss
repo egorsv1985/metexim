@@ -164,6 +164,7 @@ picture {
 // components
 
 @import "./components/burger";
+@import "./components/btn";
 
 @import "./components/swiper";
 
@@ -183,6 +184,13 @@ picture {
 @import "./sections/valuation";
 @import "./sections/advantages";
 @import "./sections/banner";
+
+
+// contacts-pages
+
+@import "./sections/promo-contacts";
+@import "./sections/contacts";
+
 
 
 
