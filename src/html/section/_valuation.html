@@ -30,7 +30,7 @@
       </div>
       <div class="col-12 col-lg-6">
         <form
-          action=""
+          action="#"
           method="get"
           class="rounded-3 border px-3 px-sm-5 py-4 bg-secondary h-100"
         >
@@ -91,7 +91,7 @@
               </button>
             </li>
           </ul>
-          <div class="tab-content" id="myTabContent">
+          <div class="tab-content" id="valuationTabContent">
             <div
               class="tab-pane fade show active"
               id="one"
@@ -139,22 +139,22 @@
                 </div>
               </div>
               <div class="d-flex justify-content-between gap-2">
-                <a
+                <button
                   class="col-6 col-md-4 fs-16 fw-500 btn d-block btn-transparent btn-outline-danger px-3 py-3 disabled position-relative btn__arrow btn__arrow--back"
                   disabled
                   href="#"
                   role="button"
                   title="Назад"
-                  >Назад</a
+                  >Назад</button
                 >
 
                 <button
                   class="col-6 col-md-4 btn fs-16 fw-500 px-3 py-3 btn-danger position-relative btn__arrow btn__arrow--next"
-                  id="two-tab"
+                  id="two-tab-next"
                   data-bs-toggle="tab"
                   data-bs-target="#two"
                   type="button"
-                  role="tab"
+                  
                   aria-controls="two"
                   aria-selected="false"
                 >
@@ -175,7 +175,7 @@
                     id="ves"
                     placeholder="Объем металла, кг"
                     class="form-control py-3 px-2 p-sm-3 fs-14 fw-500 text-info"
-                  />
+                  >
                 </div>
                 <div class="col-6">
                   <p class="fs-14 fw-500 text-info mb-2">Вывоз необходим?</p>
@@ -187,7 +187,7 @@
                           type="radio"
                           id="no"
                           name="no"
-                        />
+                        >
                         <label
                           class="form-check-label fs-14 fw-500 text-info"
                           for="no"
@@ -203,7 +203,7 @@
                           type="radio"
                           id="yes"
                           name="yes"
-                        />
+                        >
                         <label
                           class="form-check-label fs-14 fw-500 text-info"
                           for="yes"
@@ -218,11 +218,11 @@
               <div class="d-flex justify-content-between gap-2">
                 <button
                   class="col-6 col-md-4 btn fs-16 fw-500 px-3 py-3 btn-danger position-relative btn__arrow btn__arrow--next-back"
-                  id="one-tab"
+                  id="one-tab-back"
                   data-bs-toggle="tab"
                   data-bs-target="#one"
                   type="button"
-                  role="tab"
+                  
                   aria-controls="one"
                   aria-selected="false"
                 >
@@ -231,11 +231,11 @@
 
                 <button
                   class="col-6 col-md-4 btn fs-16 fw-500 px-3 py-3 btn-danger position-relative btn__arrow btn__arrow--next"
-                  id="three-tab"
+                  id="three-tab-next"
                   data-bs-toggle="tab"
                   data-bs-target="#three"
                   type="button"
-                  role="tab"
+                  
                   aria-controls="three"
                   aria-selected="false"
                 >
@@ -253,34 +253,34 @@
                 <div class="col-6 position-relative">
                   <input
                     type="text"
-                    id="name"
+                    id="name-valuation"
                     name="form[]"
                     data-error="Ошибка"
                     placeholder="Ваше имя"
                     class="form-control py-3 px-2 p-sm-3 fs-14 fw-500 text-info"
                     required
-                  />
+                  >
                 </div>
                 <div class="col-6 position-relative">
                   <input
                     type="tel"
-                    id="tel"
+                    id="tel-valuation"
                     name="form[]"
                     data-error="Ошибка"
                     placeholder="Телефон"
                     class="form-control py-3 px-2 p-sm-3 fs-14 fw-500 text-info"
                     required
-                  />
+                  >
                 </div>
               </div>
               <div class="d-flex justify-content-between gap-2">
                 <button
                   class="col-6 col-md-4 btn fs-16 fw-500 px-3 py-3 btn-danger position-relative btn__arrow btn__arrow--next-back"
-                  id="two-tab"
+                  id="two-tab-back"
                   data-bs-toggle="tab"
                   data-bs-target="#two"
                   type="button"
-                  role="tab"
+                 
                   aria-controls="two"
                   aria-selected="false"
                 >
@@ -289,11 +289,11 @@
 
                 <button
                   class="col-6 col-md-4 btn fs-16 fw-500 px-3 py-3 btn-danger position-relative btn__arrow btn__arrow--next"
-                  id="three-tab"
+                  id="three-tab-submit"
                   data-bs-toggle="tab"
                   data-bs-target="#three"
                   type="submit"
-                  role="tab"
+                 
                   aria-controls="three"
                   aria-selected="false"
                 >
