@@ -26,22 +26,43 @@
 		background-color: #d9d9d9;
 	}
   }
+  .menu {
+	// .menu__list
+	&__list {
+	}
+	// .menu__item
+	&__item {
+		position: relative;
+		&::after {
+			@include pseudo;
+			background-color: var(--bg-second-color);
+			width: 0;
+			height: 1px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -1px;
+			top: inherit;
+			transition: all .5s ease-in-out;
+			
+		  }
+		  &:hover{
+			&::after{
+				background-color: var(--main-color);
+				width: 100%;
+			}
+		  }
+	}
+	// .menu__link
+	&__link {
+	}
+  }
 }
 .py-5 {
 }
 .container {
 }
-.menu {
-  // .menu__list
-  &__list {
-  }
-  // .menu__item
-  &__item {
-  }
-  // .menu__link
-  &__link {
-  }
-}
+
 .d-none {
 }
 .d-lg-flex {

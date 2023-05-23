@@ -4,12 +4,7 @@
     transition: all .5s ease-in-out;
   }
 
-  // .menu__list
-  &__list {
-  }
-  // .menu__item
-  &__item {
-  }
+  
   &__item + &__item {
     position: relative;
     &::after {
@@ -25,7 +20,5 @@
       }
     }
   }
-  // .menu__link
-  &__link {
-  }
+  
 }
