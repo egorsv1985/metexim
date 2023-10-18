@@ -69,6 +69,7 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"@fancyapps/ui": "^5.0.24",
 		"bootstrap": "^5.2.3",
 		"gulp-cssnano": "^2.1.3",
 		"gulp-postcss": "^9.0.1",
